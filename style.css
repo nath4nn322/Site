@@ -1,3 +1,27 @@
-head{
-    background-color: tomato;
+body{
+    background-color: rgba(253, 2, 2, 0.514);
+    text-align: center;
+}
+h1{
+    font-size: xx-large;
+    font-style: italic;
+    color: #f7f7f700;
+}
+h2{
+    font-size: x-large;
+    font-style: italic;
+    color: #ffee00;
+}
+h3{
+    color: #ffffffe0;
+}
+.Luiz{
+    width: 20%;
+}
+ul {
+    list-style-position: inside;
+    text-align: center;
+}
+.Inácio{
+    width: 25%;
 }
