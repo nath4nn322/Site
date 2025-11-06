@@ -1,27 +1,259 @@
-body{
-    background-color: rgba(253, 2, 2, 0.514);
+/* ===== ESTILOS ÉPICOS PARA DxD - BY DEEPSEEK ===== */
+
+/* RESET E CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #8B0000, #4B0082, #000000);
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* HEADER ÉPICO */
+.header-epico {
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9), rgba(75, 0, 130, 0.9));
+    padding: 40px 20px;
     text-align: center;
+    border-bottom: 3px solid #FF1493;
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.3);
 }
-h1{
-    font-size: xx-large;
-    font-style: italic;
-    color: #f7f7f700;
+
+.titulo-principal {
+    color: #FF1493;
+    font-size: 3.5em;
+    text-shadow: 
+        0 0 20px #FF1493,
+        0 0 40px #FF69B4,
+        0 0 60px #FF1493;
+    margin-bottom: 10px;
+    animation: pulsar 2s infinite alternate;
 }
-h2{
-    font-size: x-large;
-    font-style: italic;
-    color: #ffee00;
+
+.subtitulo {
+    color: #FFB6C1;
+    font-size: 1.2em;
+    text-shadow: 0 0 10px rgba(255, 182, 193, 0.5);
 }
-h3{
-    color: #ffffffe0;
+
+/* ANIMAÇÃO DE PULSAR */
+@keyframes pulsar {
+    from {
+        text-shadow: 
+            0 0 20px #FF1493,
+            0 0 40px #FF69B4,
+            0 0 60px #FF1493;
+    }
+    to {
+        text-shadow: 
+            0 0 25px #FF1493,
+            0 0 50px #FF69B4,
+            0 0 75px #FF1493,
+            0 0 100px #FF69B4;
+    }
 }
-.Luiz{
-    width: 20%;
+
+/* SEÇÃO TEMPORADAS */
+.secao-temporadas {
+    display: grid;
+    gap: 30px;
+    margin: 40px 0;
 }
+
+.temporada-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid #FF69B4;
+    border-radius: 15px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.temporada-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(255, 20, 147, 0.4);
+}
+
+.temporada-card h2 {
+    color: #FF69B4;
+    text-shadow: 0 0 10px #FF69B4;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.conteudo-temporada p {
+    color: #FFFFFF;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+/* SEÇÃO PERSONAGENS */
+.secao-personagens {
+    margin: 50px 0;
+}
+
+.titulo-secao {
+    color: #FF1493;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: 0 0 15px #FF1493;
+    margin-bottom: 30px;
+}
+
+.personagem-card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid #FF1493;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.personagem-info h3 {
+    color: #FF69B4;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.personagem-img {
+    width: 100%;
+    max-width: 300px;
+    border: 3px solid #FF1493;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: transform 0.3s ease;
+}
+
+.personagem-img:hover {
+    transform: scale(1.05);
+}
+
+.placeholder-imagem {
+    background: rgba(255, 20, 147, 0.2);
+    border: 2px dashed #FF69B4;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    margin: 10px 0;
+    color: #FFB6C1;
+}
+
+/* LISTAS ESTILIZADAS */
 ul {
-    list-style-position: inside;
-    text-align: center;
+    list-style: none;
+    padding-left: 0;
 }
-.Inácio{
-    width: 25%;
+
+li {
+    background: rgba(255, 20, 147, 0.1);
+    margin: 8px 0;
+    padding: 10px 15px;
+    border-left: 3px solid #FF69B4;
+    border-radius: 5px;
+}
+
+/* SEÇÃO CURIOSIDADES */
+.secao-curiosidades {
+    margin: 50px 0;
+}
+
+.curiosidade-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 25px;
+    margin: 25px 0;
+    border: 1px solid #FF69B4;
+}
+
+.curiosidade-item h3 {
+    color: #FF1493;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.harem-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.personagem-tag {
+    background: linear-gradient(135deg, #FF1493, #FF69B4);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* FOOTER ÉPICO */
+.footer-epico {
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.9), rgba(75, 0, 130, 0.9));
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 3px solid #FF1493;
+    margin-top: 50px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+    color: #FFB6C1;
+}
+
+.dedicatoria {
+    color: #FF69B4 !important;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 15px !important;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 2.5em;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+    
+    .temporada-card {
+        padding: 15px;
+    }
+    
+    .harem-list {
+        flex-direction: column;
+    }
+}
+
+/* EFEITOS ESPECIAIS */
+::selection {
+    background: #FF1493;
+    color: white;
+}
+
+/* Scroll personalizado */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(#FF1493, #FF69B4);
+    border-radius: 6px;
 }
